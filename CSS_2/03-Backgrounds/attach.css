@@ -1,0 +1,32 @@
+/* parallax effect */
+body {
+    margin: 0px;
+    background-image: url("https://tamil.samayam.com/photo/63215315/pic.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+    background-attachment: fixed;
+}
+#div_1 {
+    background-image: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/06/29/Pictures/cricket-india-kolkata-england-3rd-odi-at_56476df4-5c79-11e7-9d38-39c470df081e.JPG");
+}
+
+#div_2 {
+    background-image: url("http://www.bestwebsiteinindia.com/blog/wp-content/uploads/2017/12/sachin-tendulkar.jpg");
+}
+#div_3 {
+    background-image: url("http://cricketindia.info/wp-content/uploads/2017/02/team-india.jpg");
+}
+#div_4 {
+    background-image: url("https://statics.sportskeeda.com/wp-content/uploads/2015/03/yuvi-1426098127.jpg");
+}
+#div_5 {
+    background-image: url("http://static.sify.com/cms/image/rdvs4Qfbbejjj.jpg");
+}

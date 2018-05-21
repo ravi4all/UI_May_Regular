@@ -1,0 +1,12 @@
+/* 
+body, h1    - Selectors
+{}          - Expression
+color       - Property
+red         - value 
+*/
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: red;
+}

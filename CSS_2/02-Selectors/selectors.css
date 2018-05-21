@@ -1,0 +1,22 @@
+.primary {
+    font-size: 35px;
+}
+.secondary {
+    font-family: 'arial';
+}
+#section_1, #section_2 {
+    background-color: lightcoral;
+}
+.child_1 {
+    background-color: lightblue;
+}
+#section_1 .child_1 {
+    width: 500px;
+}
+#section_1 .child_2 .grandchild_2 h2 {
+    color: blue;
+}
+
+#section_2 h2{
+    color: blue;
+}
