@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+@media(min-width: 768px){
+    .row {
+        display: flex;
+    }
+}
+
+#header {
+    background-color: #eeeaaa;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+#header .row {
+    justify-content: space-between;
+}
+#header h1 {
+    margin: 0px;
+}
+#header ul {
+    margin: 0px;
+    padding: 10px 0px 0px;
+    list-style: none;
+    display: flex;
+}
+#header ul li {
+    margin: 0px 13px;
+}
+#header ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border: none;
+    background: transparent;
+    display: none;
+    pointer-events: none;
+}
+.menu-btn .line {
+    display: block;
+    border: 2px solid red;
+    width: 25px;
+    transition: 1s;
+    margin-bottom: 3px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    width: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+
+    .menu-btn {
+        display: block;
+    }
+    #header ul {
+        display: block;
+        position: absolute;
+        background-color: rgba(255,255,255,1);
+        width: 100%;
+        left: 0px;
+        text-align: center;
+        top: 60px;
+        /* transform: translateY(-130%); */
+        transform: scale(1,0);
+        transition: 1s;
+    }
+    #header ul li {
+        padding: 12px;
+    }
+    #header input[type="checkbox"]:checked ~ ul {
+        /* transform: translateY(0); */
+        transform: scale(1,1);
+    }
+    #header input[type="checkbox"]:checked ~ .menu-btn .line:nth-child(2){
+        /* opacity: 0; */
+        transform: translateX(1400%);
+    }
+    #header input[type="checkbox"]:checked ~ .menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    #header input[type="checkbox"]:checked ~ .menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -13px;
+    }
+}
+
+.col {
+    background-color: #eee;
+    margin: 0px 10px 20px;
+    padding: 10px;
+}
+
+@media(max-width: 992px){
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media(max-width: 768px){
+    .row {
+        display: block;
+    }
+}
