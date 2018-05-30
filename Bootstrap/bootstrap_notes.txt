@@ -1,0 +1,21 @@
+Bootstrap - Twitter
+Responsive web framework
+
+Grid System
+
+1200px
+992px
+768px
+
+container
+	- row
+		- col-xl-*	- > 1200px
+		- col-lg-*	- > 992px
+		- col-md-*	- > 768px
+		- col-sm-*	- > 576px - landscape
+		- col-*		- < 576px
+
+
+
+
+
