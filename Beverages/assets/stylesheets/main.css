@@ -127,6 +127,21 @@ input[type="checkbox"] {
     margin-top: -15px;
 }
 
+@media(max-width: 768px){
+    #main-nav {
+        z-index: 20;
+    }
+    #main-nav ul li{
+        display: block;
+    }
+    #nav input[type="checkbox"]:checked ~ #main-nav {
+        transform: translate(0%,40%);
+    }
+    .menu-btn {
+        top: 40px;
+        right: 10px;
+    }
+}
 
 /* Banner */
 #banner {
@@ -268,4 +283,123 @@ input[type="checkbox"] {
 }
 #footer .copyrights p {
     margin-bottom: 0px;
+}
+
+
+/* Products */
+#products {
+    padding: 50px 0px;
+}
+#products h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#tabs {
+    margin-bottom: 50px;
+}
+#tabs ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#tabs ul li {
+    display: inline-block;
+    width: 24%;
+}
+#tabs ul li.active {
+    background-color: #FC636B;
+    position: relative;
+}
+#tabs ul li.active:after {
+    content: "";
+    border: 8px solid;
+    border-color: #FC636B transparent transparent;
+    position: absolute;
+    bottom: -16px;
+    margin-left: -8px;
+    left: 50%;
+    z-index: 10;
+}
+#tabs ul li a {
+    display: block;
+    padding: 12px 5px;
+    width: 100%;
+    text-align: center;
+    color: #2A2B2F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+#tab-content .product_card {
+    box-shadow: 0px 0px 20px 5px #eee;
+    text-align: center;
+}
+#tab-content .product_card .image {
+    padding: 50px;
+}
+#tab-content .product_card .image img{
+    width: 100%;
+}
+#tab-content .product_card h4 {
+    font-size: 16px;
+}
+#tab-content .product_card h4 a{
+    color: #fc636b;
+}
+#tab-content .desc {
+    padding: 0px 30px 20px;
+}
+#tab-content .price {
+    font-weight: bold;
+}
+#tab-content .price .old-price{
+    text-decoration: line-through;
+    text-decoration-color: #908e8e;
+    color: #908e8e;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.cart-btn {
+    background-color: #2FDAB8;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0px;
+    position: relative;
+}
+
+.cart-btn:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #2FDAB8;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cart-btn:hover:after {
+    transform: scale(1.1,1.6);
+}
+
+#women {
+    display: none;
+}
+#women:target {
+    display: block;
+}
+
+#women:target ~ #men {
+    display: none;
 }
