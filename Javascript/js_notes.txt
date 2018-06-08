@@ -1,0 +1,46 @@
+HTML - Static
+
+Javascript
+Client side dynamic scripting language
+
+Nexus - first static web browser
+
+Mosaic - first dynamic web browser
+
+Mocha => Livescript => Javascript
+
+DOM - Document Object Model
+BOM - Browser Object Model
+Validations
+
+Client + Server side dynamic scripting language
+
+Server Side
+Node.js
+
+Client Side
+Angular
+React
+Knockout
+Backbone
+Vue 
+
+Client Side Scripting Language
+Dynamically Typed
+Loosely Typed/Coupled/Weakly Typed
+Functions are first class citizens
+Prototype based
+
+
+Interpreter
+
+
+
+
+
+
+
+
+
+
+
