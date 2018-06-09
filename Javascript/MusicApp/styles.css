@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    width: 400px;
+}
+ul li {
+    padding: 15px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: 2px solid red;
+}
+ul li:hover {
+    background-color: #f0f0f0;
+}
